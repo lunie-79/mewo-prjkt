@@ -1,0 +1,12 @@
+meme_dict = {
+    "CRINGE": "Coś wyjątkowo dziwnego lub zawstydzającego",
+    "BANGER": "Coś fajnego, np. piosenka",
+    "AZBEST": "W sumie nie wiem, pokazał mi to wujek Google, ale chyba chodzi o ten materiał, którego używa się do budowania"
+}
+
+word = input("Wpisz słowo, którego nie rozumiesz, używaj wielkich liter, pls: ")
+
+if word in meme_dict:
+    print(meme_dict[word])
+else:
+    print("Nie znam tego słowa.")
