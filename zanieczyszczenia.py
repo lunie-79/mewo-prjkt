@@ -25,12 +25,12 @@ async def hello(ctx):
 async def mem(ctx):
     folder = "images"
     if not os.path.exists(folder):
-        await ctx.send("Folder 'images' nie istnieje 😢")
+        await ctx.send("Folder 'images' nie istnieje")
         return
 
     pliki = os.listdir(folder)
     if not pliki:
-        await ctx.send("Brak memów w folderze 😢")
+        await ctx.send("Brak memów w folderze")
         return
 
     wybrany_plik = random.choice(pliki)
